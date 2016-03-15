@@ -43,8 +43,8 @@
       .top-bar-left{
         ul{
           li{
-            height: 30px;
-            line-height: 30px;
+            height: $header-nav-menu-li-height;
+            line-height: $header-nav-menu-li-height;
             vertical-align: middle;
             border: none;
             a{

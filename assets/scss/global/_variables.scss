@@ -20,4 +20,5 @@ $header-banner-catalogue-bg: url('../images/theme-img/banner-bg.jpg') no-repeat;
 $header-menu-bg-desk: $orange;
 $header-top-height: 60px;
 $header-top-margin-base: 10px;
-$header-catalogue-button-height: ($header-top-height - ($header-top-margin-base * 2)) ;
+$header-catalogue-button-height: ($header-top-height - ($header-top-margin-base * 2));
+$header-nav-menu-li-height: 30px;
