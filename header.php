@@ -41,21 +41,19 @@
 				<a href="#">Télécharger notre catalogue <i class="fa fa-download"></i></a>
 			</div>
 		</div>
-		<nav class="nav-header row">
-			<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+		<div class="nav-header row">
+			<div class="title-bar" data-responsive-toggle="menu-header" data-hide-for="medium">
 				<button class="menu-icon" type="button" data-toggle></button>
 			</div>
 
-			<div class="top-bar" id="example-menu">
-				<div class="top-bar-left">
-					<?php foundationpress_top_bar_r(); ?>
+			<div class="top-bar" id="menu-header">
+				<?php foundationpress_top_bar_r(); ?>
 
-					<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
-						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-					<?php endif; ?>
-				</div>
+				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
+					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+				<?php endif; ?>
 			</div>
-		</nav>
+		</div>
 	</header>
 
 	<section class="container">

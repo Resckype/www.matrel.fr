@@ -1,0 +1,77 @@
+.suivi-nav{
+  margin: 10px;
+  padding-left: 6px;
+  a{
+    color: $black;
+    font-size: $font-size-less;
+    font-style: italic;
+    @include transition(all, 0.2s, ease);
+    &:hover, &.suivi-active{
+      color: $orange;
+    }
+  }
+}
+.article-product{
+  h2{
+    height: 40px;
+    color: $orange;
+    font-size: $font-size-more;
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 6px;
+    //border-bottom: 2px solid $orange-gradient;
+  }
+  hr{
+    display: block;
+    height: 2px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background: $orange-gradient;
+    border: none;
+  }
+  h3{
+    color: $black;
+    font-size: $font-size-more;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 1px solid $dark-gray;
+  }
+  .product-description{
+    background: $light-gray;
+    padding: 10px;
+    h3{
+      display: block;
+      width: 180px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    p{
+      line-height: 16px;
+    }
+    b{
+      color: $orange;
+    }
+  }
+  .columns{
+    margin: 10px 0;
+  }
+  .product-link{
+    text-align: center;
+    a{
+      display: inline-block;
+      width: 300px;
+      background: $white;
+      color: $orange;
+      font-size: $font-size-big;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 50px;
+      padding: 10px 0;
+      border: 2px solid $orange;
+      border-radius: 5px;
+    }
+  }
+}

@@ -7,6 +7,7 @@ $orange: #ff9900;
 $tonic: #ffcc00;
 $org-tnc: #ffb300;
 $tonic-less: rgba($tonic, 0.5);
+$orange-gradient: linear-gradient(to right,  $orange 0%,$tonic 100%);
 
 // Font Size
 $font-size-less: 11px;
@@ -22,3 +23,4 @@ $header-top-height: 60px;
 $header-top-margin-base: 10px;
 $header-catalogue-button-height: ($header-top-height - ($header-top-margin-base * 2));
 $header-nav-menu-li-height: 30px;
+$header-nav-menu-a-height: ($header-nav-menu-li-height - 10px);
