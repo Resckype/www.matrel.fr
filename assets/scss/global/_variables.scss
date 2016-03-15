@@ -1,0 +1,23 @@
+/*
+Fichier de variables
+*/
+
+// Colors
+$orange: #ff9900;
+$tonic: #ffcc00;
+$org-tnc: #ffb300;
+$tonic-less: rgba($tonic, 0.5);
+
+// Font Size
+$font-size-less: 11px;
+$font-size-small: 12px;
+$font-size-base: 14px;
+$font-size-big: 18px;
+$font-size-more: 24px;
+
+// Header
+$header-banner-catalogue-bg: url('../images/theme-img/banner-bg.jpg') no-repeat;
+$header-menu-bg-desk: $orange;
+$header-top-height: 60px;
+$header-top-margin-base: 10px;
+$header-catalogue-button-height: ($header-top-height - ($header-top-margin-base * 2)) ;

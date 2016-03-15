@@ -1,0 +1,84 @@
+.site-header{
+  margin-bottom: 20px;
+  .top-header {
+    height: $header-top-height;
+    margin-top: $header-top-margin-base;
+    margin-bottom: $header-top-margin-base;
+    .header-logo{
+      text-align: center;
+      line-height: $header-top-height;
+      vertical-align: middle;
+    }
+    .header-catalogue{
+      height: $header-top-height;
+      background:$header-banner-catalogue-bg;
+      background-size: cover;
+      a{
+        display: block;
+        @include bgOrangeGradient();
+        height: $header-catalogue-button-height;
+        width: 300px;
+        margin: $header-top-margin-base 0;
+        float: right;
+        clear: both;
+        color: $white;
+        font-size: $font-size-base;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 10px;
+        line-height: $header-catalogue-button-height;
+        vertical-align: middle;
+        i{
+          margin-left: $header-top-margin-base;
+          font-size: $font-size-big;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .nav-header{
+    .top-bar{
+      @include bgOrangeGradient();
+      .top-bar-left{
+        ul{
+          li{
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+            border: none;
+            a{
+              height: 20px;
+              color: $white;
+              font-size: $font-size-base;
+              font-weight: 400;
+              text-transform: uppercase;
+              line-height: 20px;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              border-right: 1px solid $white;
+              &:hover{
+                background: none;
+              }
+            }
+            @include transition(all, 0.3s, ease);
+            &:hover{
+              background: $tonic-less;
+            }
+            &:last-child{
+              a{
+                border: none;
+              }
+            }
+          }
+          .active{
+            background: $tonic-less;
+            a{
+              background: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
