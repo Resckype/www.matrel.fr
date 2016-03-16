@@ -19,9 +19,15 @@
     font-weight: 300;
     text-align: left;
     text-transform: uppercase;
+    line-height: 24px;
+    vertical-align: middle;
     margin: 0;
     padding-left: 6px;
-    //border-bottom: 2px solid $orange-gradient;
+    @media screen and(max-width: 640px) {
+      height: 60px;
+      padding: 0 40px;
+      text-align: center;
+    }
   }
   hr{
     display: block;
@@ -37,6 +43,9 @@
     font-weight: 400;
     text-transform: uppercase;
     border-bottom: 1px solid $dark-gray;
+  }
+  .columns{
+    margin: 10px 0;
   }
   .product-description{
     background: $light-gray;
@@ -54,8 +63,48 @@
       color: $orange;
     }
   }
-  .columns{
-    margin: 10px 0;
+  .product-caract{
+    margin: 0;
+    background: $light-gray;
+    .columns{
+      margin: 0;
+      padding: 0;
+    }
+    ul{
+      display: inline-block;
+      width: 100%;
+      margin: 0;
+      list-style: none;
+      li{
+        min-height: 30px;
+        padding: 0 10px;
+        &:nth-child(odd){
+          background: $light-gray;
+        }
+        &:nth-child(even){
+          background: $medium-gray;
+        }
+      }
+    }
+    @media screen and(max-width: 960px) {
+      #caract-2{
+        ul{
+          li{
+            &:nth-child(odd){
+              background: $medium-gray;
+            }
+            &:nth-child(even){
+              background: $light-gray;
+            }
+          }
+        }
+      }
+    }
+    @media screen and(max-width: 640px) {
+      h3{
+
+      }
+    }
   }
   .product-link{
     text-align: center;
@@ -68,10 +117,29 @@
       font-weight: 600;
       text-transform: uppercase;
       text-align: center;
-      margin: 0 50px;
+      margin: 10px 50px;
       padding: 10px 0;
       border: 2px solid $orange;
       border-radius: 5px;
+      i{
+        padding-left: 14px;
+      }
+      @media screen and(max-width: 640px) {
+        margin: 0 auto 10px auto;
+      }
+      &:hover{
+        @include bgOrangeGradient();
+        color: $white;
+      }
     }
+  }
+}
+.slideshow-slideleft, .slideshow-slideright{
+  background: rgba($black, 0.8) !important;
+  &:hover{
+    background: $black !important;
+  }
+  &:before{
+    color: $white !important;
   }
 }

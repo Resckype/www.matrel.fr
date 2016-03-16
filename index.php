@@ -16,7 +16,7 @@
 get_header(); ?>
 
 <div id="page" role="main">
-	<div class="suivi-nav">
+	<div class="suivi-nav hide-for-small-only">
 		<a href="#">Accueil</a> &rsaquo;
 		<a href="#">Produits</a> &rsaquo;
 		<a href="#">Raineuse/plieuse/perforation</a> &rsaquo;
@@ -40,11 +40,18 @@ get_header(); ?>
 			</div>
 			<div class="large-12 columns">
 				<h3>Caractéristique produit</h3>
-				<p><?php echo the_field('caract_produit'); ?></p>
+				<div class="product-caract row">
+					<div id="caract-1" class="small-12 large-6 columns">
+						<?php echo the_field('caract_produit_1'); ?>
+					</div>
+					<div id="caract-2" class="small-12 large-6 columns">
+						<?php echo the_field('caract_produit_2'); ?>
+					</div>
+				</div>
 			</div>
-			<div class="product-link">
-				<a href="<?php echo the_field('caract_produit'); ?>">Fiche Produit (PDF)</a>
-				<a href="<?php echo the_field('lien_contact'); ?>">Nous contacter</a>
+			<div class="large-12 columns product-link">
+				<a href="<?php echo the_field('fiche_pdf'); ?>">Fiche Produit (PDF)<i class="fa fa-download"></i></a>
+				<a href="<?php echo the_field('lien_contact'); ?>">Nous contacter<i class="fa fa-envelope-o"></i></a>
 			</div>
 
 		<?php endwhile; ?>

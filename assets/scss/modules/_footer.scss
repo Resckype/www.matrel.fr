@@ -2,17 +2,47 @@
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
-	border-top: 1px solid #ccc;
-	margin-top: rem-calc(60);
+	margin-top: 20px;
+
 
 	#footer {
-		@include grid-row();
-		padding: rem-calc(30) 0;
-
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
+		@include bgOrangeGradient();
+		ul{
+			padding: 10px 0;
+			min-height: 32px;
+			li{
+				a{
+					padding-top: 6px;
+					padding-bottom: 6px;
+					color: $white;
+					font-size: $font-size-small;
+					text-transform: uppercase;
+					border-right: 1px solid $white;
+					@include transition(all, 0.3s, ease);
+					&:hover{
+						color: $tonic;
+					}
+				}
+			}
+		}
+		@media screen and(max-width: 640px) {
+			ul{
+				li{
+					display: block;
+					text-align: center;
+					a{
+						width: 180px;
+						margin: 0 auto;
+						border-right: none;
+						border-bottom: 1px solid $white;
+					}
+					&:last-child{
+						a{
+							border: none;
+						}
+					}
+				}
+			}
 		}
 	}
 }

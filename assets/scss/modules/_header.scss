@@ -1,4 +1,5 @@
 .site-header{
+  position: relative;
   margin-bottom: 10px;
   .top-header {
     height: $header-top-height;
@@ -40,7 +41,7 @@
   .nav-header{
     .top-bar{
       @include bgOrangeGradient();
-      ul{
+      .dropdown{
         li{
           height: $header-nav-menu-li-height;
           line-height: $header-nav-menu-li-height;
@@ -69,11 +70,46 @@
               border: none;
             }
           }
+          .vertical{
+            li{
+              background: $orange;
+              a{
+                border: none;
+              }
+              &:hover{
+                background: $org-tnc;
+              }
+            }
+          }
         }
         .active{
           background: $tonic-less;
           a{
             background: none;
+          }
+        }
+      }
+      @media screen and(max-width: 640px) {
+        border-top: 2px solid $dark-gray;
+        .top-bar-title{
+          .menu-icon{
+            position: absolute;
+            height: 30px;
+            top: 20px;
+            left: 10px;
+          }
+        }
+        .dropdown{
+          li{
+            display: block;
+            height: 36px;
+            a{
+              color: $white;
+              font-size: $font-size-big;
+              line-height: 36px;
+              vertical-align: middle;
+              border-right: none;
+            }
           }
         }
       }
